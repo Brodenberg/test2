@@ -19,186 +19,6 @@ $bg-color: #fff;
     text-transform: $upp-case;
 }
 
-// ------------------------------------------------------------------------------
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-weight: normal;
-  vertical-align: baseline;
-  background: transparent; }
-
-article, aside, figure, footer, header, nav, section, details, summary {
-  display: block; }
-
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
-/* Responsive images and other embedded objects
-*/
-img,
-object,
-embed {
-  max-width: 100%; }
-
-/* force a vertical scrollbar to prevent a jumpy page */
-html {
-  overflow-y: scroll; }
-
-/* we use a lot of ULs that aren't bulleted.
-    don't forget to restore the bullets within content. */
-ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none; }
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-
-del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted #000;
-  cursor: help; }
-
-/* tables still need cellspacing="0" in the markup */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-th {
-  font-weight: bold;
-  vertical-align: bottom; }
-
-td {
-  font-weight: normal;
-  vertical-align: top; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-input, select {
-  vertical-align: middle; }
-
-pre {
-  white-space: pre;
-  /* CSS2 */
-  white-space: pre-wrap;
-  /* CSS 2.1 */
-  white-space: pre-line;
-  /* CSS 3 (and 2.1 as well, actually) */
-  word-wrap: break-word;
-  /* IE */ }
-
-input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
-  padding: 0; }
-
-input[type="radio"] {
-  vertical-align: text-bottom; }
-
-input[type="checkbox"] {
-  vertical-align: bottom; }
-
-.ie7 input[type="checkbox"] {
-  vertical-align: baseline; }
-
-.ie6 input {
-  vertical-align: text-bottom; }
-
-select, input, textarea {
-  font: 99% sans-serif; }
-
-table {
-  font-size: inherit;
-  font: 100%; }
-
-small {
-  font-size: 85%; }
-
-strong {
-  font-weight: bold; }
-
-td, td img {
-  vertical-align: top; }
-
-/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* standardize any monospaced elements */
-pre, code, kbd, samp {
-  font-family: monospace, sans-serif; }
-
-/* hand cursor on clickable elements */
-.clickable,
-label,
-input[type=button],
-input[type=submit],
-input[type=file],
-button {
-  cursor: pointer; }
-
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea {
-  margin: 0; }
-
-/* make buttons play nice in IE */
-button,
-input[type=button] {
-  width: auto;
-  overflow: visible; }
-
-/* scale images in IE7 more attractively */
-.ie7 img {
-  -ms-interpolation-mode: bicubic; }
-
-/* let's clear some floats */
-.clearfix:before, .clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  zoom: 1; }
-
-
 body{
 	box-sizing: border-box;
 	font-family: Lato, Roboto, sans-serif;
@@ -215,7 +35,7 @@ header{
 	height: 70px;
 	border-bottom: 3px solid #CCCCCC;
 	position: relative;
-	line-height: 70px;
+	line-height: 50px;
  
     &:before {
 	    content: '';
@@ -293,7 +113,7 @@ main{
 }
 .section-with-btm_sub-title{
     @extend %main-style-sub-title;
-    width: 410px;
+    width: 400px;
     text-align: left;
     margin-bottom: 30px;
 } 
@@ -312,12 +132,11 @@ main{
 	border-radius: 10px;
 	background-color: #fff;
 	color: #708eff;
-	cursor: pointer;
 	width: 150px;
 	height: 40px;
 	line-height: 40px;
-	box-shadow: 0 4px 8px rgba(197, 197, 197, 0.5);;
-    padding: 0px 20px;
+	box-shadow: 0 4px 8px rgba(197, 197, 197, 0.5);
+  cursor: pointer;
 
     &:hover{
     	color: #fff;
@@ -362,7 +181,7 @@ main{
 }
 
 .sub-title-blue{
-    width: 410px;
+    width: 461px;
     color: #3e3e3e;
     font-size: 20px;
     line-height: 36px;
@@ -395,7 +214,7 @@ main{
     width: 375px;
     height: 290px;
     position: absolute;
-    right: 200px;
+    right: 100px;
     top: 20%;
 }
 
@@ -406,7 +225,7 @@ main{
 }
 
 .sub-title-red{
-    width: 410px;
+    width: 461px;
     color: #3e3e3e;
     @extend %main-style-sub-title;
     text-align: left;
@@ -417,7 +236,7 @@ main{
 	width: 230px;
 	height: 874px;
 	position: absolute;
-	right: 100px;
+	right: 0;
 	top: 0;
 }
 
@@ -544,7 +363,7 @@ main{
 
 .footer-sub-title{
 	@extend %main-style-sub-title;
-    max-width: 475px;
+    max-width: 525px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -600,6 +419,10 @@ main{
 		justify-content: space-between;
 	}
 
+  .logo{
+    margin-left: 20px;
+  }
+
 .section-with-btn{
 	flex-direction: column;
 	justify-content: center;
@@ -610,7 +433,7 @@ main{
 }
 .section-with-btn .section-with-btm_sub-title {
     text-align: center;
-    width: 600px;
+    width: 660px;
 }
 
 .btn{
@@ -864,14 +687,14 @@ ul, menu, dir {
     max-width: 342px;
     text-align: left;
 }
+}
 
-
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
 
 	.logo{
 	font-size: 18px;
 }
+
 
 .section-with-btm_sub-title{
 	font-size: 14px;
@@ -879,14 +702,15 @@ ul, menu, dir {
 	max-width: 306px;
 
 }
-
-.section-blue-block{
-    margin-bottom: 20px;
-}
-
 .section-with-btn__img{
     max-width: 285px;
     height: 226px;
+}
+
+.section-blue-block{
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .blue-phone{
@@ -920,6 +744,8 @@ ul, menu, dir {
 	flex-direction: column;
 	margin-bottom: 20px;
 	padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 
@@ -983,6 +809,8 @@ ul, menu, dir {
     flex-direction: column-reverse;
     align-items: center;
     padding: 20px;
+    max-width: 300px;
+  margin: 0 auto;
 }
 
 .yellow-block{
@@ -1024,13 +852,14 @@ max-width: 200px;
 
 .section-img-columns{
 	display: flex;
+  flex-direction: column;
 	justify-content: space-around;
     align-items: center;
     height: 590px;
     flex-wrap: wrap;
 
     & .container-img-columns{
-        max-width: 300px;
+        max-width: 500px;
     height: 160px;
     overflow-x: scroll;
     display: flex;
@@ -1093,10 +922,16 @@ line-height: 28px;
     line-height: 40px;
     font-size: 12px;
     }
-} 
+}
 
+@media screen and (max-width: 500px){
+.section-img-columns .container-img-columns {
+    max-width: 400px;
+}
+}
 
-
-
-
-/*-----------------------------------------*/
+@media screen and (max-width: 400px){
+.section-img-columns .container-img-columns {
+    max-width: 320px;
+}
+}
